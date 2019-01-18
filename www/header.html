@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <!-- CSS -->
+  <!--<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css" />-->
+  <link rel='stylesheet' id='bootstrap.min-css' href="bs/scss/bootstrap.css" type='text/css' media='all' />
+  <link rel='stylesheet' id='bootstrap.min-css-rtl' href='bs/scss/bootstrap-rtl.min.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='css-style' href='css/style.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='css-style' href="css/fa/css/font-awesome.min.css" type='text/css' media='all' />
+</head>
+
+<body>
+  <div class="preloader"></div>
+  <div class="splash">
+    <a class="skip_to_home btn btn-primary" style="display:none">تخطي</a>
+    <a class="check_interent btn btn-danger" style="display:none">أنت غير متصل بالانترنت !</a>
+  </div>
+
+  <div data-role="page" id="main_page">
+    <!-- Start page header -->
+    <div data-role="header" data-position="fixed" class="header">
+      <img src="images/logo.png" alt="" title="" width="" height="" class="logo">
+      <button id="logout" style="display:none">
+          <i class="fa fa-power-off"></i>
+        </button>
+      <!--<a data-icon="bars" data-iconpos="notext" data-role="button" href="#menu" class="bars_icon ui-btn-right">القائمة</a>-->
+    </div>
+    <!-- End page header -->
+    <!-- start page menu -->
+    <div data-role="panel" id="menu" data-position="right" data-display="push">
+    </div>
+    <!-- /panel - End page menu -->
