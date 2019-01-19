@@ -649,13 +649,13 @@ iframe {
 .NewOrderButton {     display: block;
   margin: 70% auto;
   font-size: 7em;
-  width: 64%;
+  width:55%;
   /* height: 60%; */
   background: #ffb842;
   color: #ffffff;
   border-radius: 100%;
   text-align: center;
-  padding: 8% 6% 4% 6%;
+  padding: 2% 6% 0% 6%;
 position: relative; }
 
   .NewOrderButton span { 
@@ -758,4 +758,16 @@ position: relative; }
              
               .OrderSummary table td span { float: right; padding-left: 4px;}
               .OrderSummary table { margin: 50px 10% 5px 10%; width: 80%; padding: 5px; }
+
+              .OrderConfirmed { text-align: center }
+
+
+              .OrderNum { display: table; margin: 40px auto 0 auto; font-weight: 700; font-size: 1.5em; color: #666666; font-family: "Droid Arabic Kufi",tahoma; }
+
+              .OrderSuccessed { margin: 75px auto; background: #090 }
+
+
+              .InvoicRequire { background: #ffc000; display: table; margin: 40px auto 0 auto; font-weight: 700; font-size: 1.2em;  font-family: "Droid Arabic Kufi",tahoma; min-width: 75%; border-radius: 5px; padding: 15px 10px;  }
+
+              .InvoicRequire i { font-size: 2em; }
  
