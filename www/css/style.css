@@ -649,7 +649,7 @@ iframe {
 .NewOrder { display: block; width: 100% }
 
 .NewOrderButton {   display: block;
-  margin: 50% auto;
+  margin: 20vh auto;
   font-size: 7em;
   width: 60%;
   background: #f3f3f3;
@@ -682,7 +682,7 @@ iframe {
 
 
 .RegTable {   float: right;
-  margin: 13% 3% 0% 3%;
+  margin: 3vh 3% 0% 3%;
   font-size: 1em;
   width: 44%;
   background: #eeeeee;
@@ -691,6 +691,7 @@ iframe {
   border-radius: 100%;
   text-align: center;
   padding: 16% 6%;
+  font-size: 1em;
   position: relative;}
 
 
