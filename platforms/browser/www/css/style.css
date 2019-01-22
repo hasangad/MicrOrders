@@ -716,7 +716,7 @@ iframe {
       .RegTable:Active span {color: #000000; background: #ffffff; }
 
       .FoodList { position: relative; width: 100%; overflow: hidden; padding-top: 20%; }
-      .FoodType { border-bottom:1px solid #cccccc; padding:10px; display: block; overflow: hidden; clear: both; width: 95%; position: relative; }
+      .FoodType { border-bottom:1px solid #cccccc; padding:10px; display: block; overflow: hidden; clear: both; width: 100vw; position: relative; }
       .FoodType:active { background: #fea; }
       .FoodType img { float: right; margin-left: 10px; width: 25%; }
 
