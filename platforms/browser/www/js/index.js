@@ -11,6 +11,13 @@ var app = {
     //alert("Device IS ready");
     //alert('We are Testing ');
 
+
+      
+  var IsActiveApp = localStorage.getItem("ActiveApp");
+
+
+
+
     function checkConnection() {
       var networkState = navigator.connection.type;
       var states = {};
@@ -27,34 +34,42 @@ var app = {
         //alert("أنت غير متصل بالانترنت !");
         $(".check_interent")
           .fadeIn(1000);
+          
       } else {
         //alert("Connected");
+
+        if(IsActiveApp == "") { 
+
+          $('.SetAppData').show();
+      
+          //alert( IsActiveApp);
+      
+          $('.skip_to_home').hide();
+      
+        } else {
+
         $(".skip_to_home")
-          .fadeIn(1000);
+          .fadeIn(1000); }
       }
     }
     checkConnection();
- 
+ /*
     FCMPlugin.subscribeToTopic('HasanGadSupport');
     FCMPlugin.subscribeToTopic('HasanGadSupportMobile');
     FCMPlugin.onTokenRefresh(function(token) {
-      //alert(token);
       localStorage.MobileToken = token;
     });
-
     FCMPlugin.getToken(function(token) {
       //alert(token);
       localStorage.MobileToken = token;
 
     });
-   
     FCMPlugin.onNotification(function(data) {
       if (data.wasTapped) {
 
       } else {
-
       }
-    });
+    });*/
   }
  
 }

@@ -1,5 +1,14 @@
+if(!localStorage.setItem){
+
+localStorage.setItem("ActiveApp",""); }
+
+  //alert(localStorage.getItem("ComApp"));
+
+    
+
  //$get_favs_array = localStorage.removeItem("favs");
  $(document).on('click', '.t_show', function() {
+
     if ($(".t_id").val() !== "") {
       $(".preloader").fadeIn();
       $t_id = $(".t_id").val();
@@ -33,6 +42,9 @@
     }
   });
   $(document).ready(function() {
+
+
+
     // Check of user logged in before and stored by webstorage
     $storedName = localStorage.getItem('login_is');
     $storedPw = localStorage.getItem('pass_is');

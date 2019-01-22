@@ -317,8 +317,10 @@ body, #main_page, .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wr
 
 #main_page {
   padding-top: 14vh;
+  overflow: hidden;
 }
 
+.logged_in , .main { padding: 0 }
 #menu {
   background-color: #96641d;
   direction: rtl;
@@ -641,22 +643,22 @@ iframe {
 /*------------------- MicrOrder Style ------*/
 
 .row { margin-left: -15px; margin-right: -15px; }
-
+.SetAppData { position: absolute; bottom: 10%; }
 
 .page { display: none; }
 .NewOrder { display: block; width: 100% }
 
-.NewOrderButton {     display: block;
-  margin: 70% auto;
+.NewOrderButton {   display: block;
+  margin: 50% auto;
   font-size: 7em;
-  width:55%;
-  /* height: 60%; */
-  background: #ffb842;
+  width: 60%;
+  background: #f3f3f3;
   color: #ffffff;
   border-radius: 100%;
   text-align: center;
-  padding: 2% 6% 0% 6%;
-position: relative; }
+  padding: 10% 6% 7% 6%;
+  position: relative;
+  border: 2px solid #cccccc; }
 
   .NewOrderButton span { 
     position: absolute;
@@ -675,16 +677,17 @@ position: relative; }
 
   .NewOrderButton:active { background: #090 }
 
-.NewOrderButton i  { color: #ffffff; }
+.NewOrderButton i  { color: #cccccc; }
 
 
 
 .RegTable {   float: right;
-  margin: 5% 2%;
+  margin: 13% 3% 0% 3%;
   font-size: 1em;
-  width: 34%;
-  background: #ffb842;
-  color: #ffffff;
+  width: 44%;
+  background: #eeeeee;
+  border:1px solid #cccccc;
+  color: #cccccc;
   border-radius: 100%;
   text-align: center;
   padding: 16% 6%;
@@ -692,22 +695,28 @@ position: relative; }
 
 
   .RegTable b { color: #000000; clear: both; text-align: center; display: block; }
-    .RegTable span {color: #000000;
+    .RegTable span {color: #ffffff;
       clear: both;
       text-align: center;
       padding: 0px 10px;
       border-radius: 5px;
-      background: #ffffff;
+      background: #666666;
       font-weight: 400;
       font-size: 0.8em;
       width: 85%;
       display: block;
       margin: 7px auto 0 auto; }
 
+      .RegTable:Active { background: #FC0; color: #ffffff; border-color: #f84a28; }
 
-      .FoodList { position: relative; width: 100%; overflow: hidden; padding-top: 12%; }
-      .FoodType { border-bottom:1px solid #cccccc; padding:12% 10px 10px 10px; display: block; overflow: hidden; clear: both; width: 95%; position: relative; }
+      .RegTable:Active  b { color: #ffffff }
 
+
+      .RegTable:Active span {color: #000000; background: #ffffff; }
+
+      .FoodList { position: relative; width: 100%; overflow: hidden; padding-top: 20%; }
+      .FoodType { border-bottom:1px solid #cccccc; padding:10px; display: block; overflow: hidden; clear: both; width: 95%; position: relative; }
+      .FoodType:active { background: #fea; }
       .FoodType img { float: right; margin-left: 10px; width: 25%; }
 
       .FoodType h2 { font-size: 1.5em;color: #555555; margin-top: 20px; width: 50%; float: right ; font-weight: 400}
@@ -752,8 +761,8 @@ position: relative; }
               .OrderSummary table { border: 1px dashed #cccccc !important; }
               .OrderSummary table tr { border-bottom: 1px dashed #cccccc !important; display: block; direction: rtl; color: #666666; overflow: hidden; font-family: "Droid Arabic Kufi",tahoma }
               .OrderSummary table tr:last-child { border-bottom: none !important; overflow: hidden; display: block; }
-              .OrderSummary table td { border:none !important; padding-top: 5px; width: 48%; float: right }
-              .OrderSummary table td:last-child { border:none !important; padding: 4px; width: 48%; float: right; text-align: left }
+              .OrderSummary table td { border:none !important; padding-top: 10px 20px; width: 48%; float: right }
+              .OrderSummary table td:last-child { border:none !important; padding: 10px 20px; width: 48%; float: right; text-align: left }
               .OrderSummary table td:last-child span ,   .OrderSummary table td:last-child i {  float: left; }
              
               .OrderSummary table td span { float: right; padding-left: 4px;}
@@ -767,7 +776,35 @@ position: relative; }
               .OrderSuccessed { margin: 75px auto; background: #090 }
 
 
-              .InvoicRequire { background: #ffc000; display: table; margin: 40px auto 0 auto; font-weight: 700; font-size: 1.2em;  font-family: "Droid Arabic Kufi",tahoma; min-width: 75%; border-radius: 5px; padding: 15px 10px;  }
+              .InvoicRequire { background: #ffc000; color: #000000; display: table; margin: 40px auto 0 auto; font-weight: 700; font-size: 1.2em;  font-family: "Droid Arabic Kufi",tahoma; min-width: 75%; border-radius: 5px; padding: 15px 10px;  }
 
               .InvoicRequire i { font-size: 2em; }
+
+
+              .main .page {     position: relative;
+                height: 86vh;
+                width: 100vw;
+                top: 0;
+                margin: 0; padding:45px 0 0 0;
+                overflow: hidden; background: #ffffff}
+
+                  .page2 ,       .page3 ,       .page4 ,       .page5 ,       .page6 { display: block; position: absolute !important; left: -100vh; height: 100vh; overflow-y: scroll; } 
+
+                  .page1 { z-index: 1 }
+                  .page2 { z-index: 2 }
+                  .page3 { z-index: 3 }
+              .page4 { z-index: 4 }
+              .page5 { z-index: 5 }
+              .page6 { z-index: 6 }
+
+
+              .alert { font-family: "Droid Arabic Kufi",tahoma;
+
+    width: 80%;
+    display: table;
+    margin: 10px auto;
+               }
+
+              .alert-purple { background: #aa41ab; color: #ffffff;
+               }
  
