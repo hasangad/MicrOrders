@@ -1,4 +1,4 @@
-if(!localStorage.setItem){
+if(!localStorage.getItem("ActiveApp")){
 
 localStorage.setItem("ActiveApp",""); }
 
